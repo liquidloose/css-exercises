@@ -60,6 +60,12 @@ ul {
   margin-left: auto;
  }
 
+
+ /* So it's not solved all with flex. You can keep this simple with flex 
+ by just splitting the top into two halves and using "space-between". duh
+ then all spacing works itself out with gap and padding etc. I actually 
+ made it more difficult but it's ok, i still solved it. */
+
  
 
  
