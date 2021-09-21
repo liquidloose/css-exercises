@@ -26,7 +26,6 @@ input {
   margin-bottom: 16px;
 }
 
-
 /* Solution */
 body {
   display: flex;
@@ -41,7 +40,7 @@ body {
 }
 
 .right-links {
-  margin-right: 40px;
+  /* margin-right: 40px; */
 }
 
 .content {
@@ -54,14 +53,41 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: #eeeeee;
-  
+  padding: 16px;
 }
 
 ul {
   display: flex;
   gap: 18px;
   list-style-type: none;
- color: green;}
+  margin: 0;
+  padding: 0;
+
+  /* I had to change this to copy the given solution. It was driving me nuts!
+  I found the answer by looking at their code. I DID solve the problem but it was
+  hackish and ugly. The reason is this: 
+  
+  ul, menu, dir {
+   display: block;
+   list-style-type: disc;
+   -webkit-margin-before: 1em;
+   -webkit-margin-after: 1em;
+   -webkit-margin-start: 0px;
+   -webkit-margin-end: 0px;
+   -webkit-padding-start: 40px;
+  }
+
+  You'll have to use a custom rule for your ul:
+
+    element.style {
+        margin-left: 0px;
+        /* set to 0 if your not using a list-style-type 
+        padding-left: 20px; 
+      }
+
+  */
+  
+}
 
  ul a {
    color: darkslategray;
