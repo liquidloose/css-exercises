@@ -39,10 +39,6 @@ body {
   color: darkslategray;
 }
 
-.right-links {
-  /* margin-right: 40px; */
-}
-
 .content {
   display: flex;
   flex-direction: column;
