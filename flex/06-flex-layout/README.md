@@ -19,3 +19,69 @@ Flexbox is useful for laying out entire pages as well as the smaller components 
 - Logo, input and buttons are centered in the screen.
 - Buttons have an appropriate amount of padding.
 - There is space between the logo, input and buttons.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header, .footer {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.header a, .footer a {
+  text-decoration: none;
+  color: darkslategray;
+}
+
+.left-links {
+  display: flex;
+  gap: 28px;
+  list-style-type: none;  
+}
+
+.right-links {
+  display: flex;
+  gap: 28px;
+  list-style-type: none;  }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+.right-links {
+  background-color:;
+  margin-right: 50px;
+}
+
+
+
+footer {
+  flex-direction: column;
+  align-items: flex-end;
+}
+body {
+  width: 100%;
+     margin: 0 auto;
+}
